@@ -9,9 +9,9 @@ const Navbar = () => {
 
             <ul>
 
-                <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-                <li><NavLink to="/about" activeClassName="active">Chi Siamo</NavLink></li>
-                <li><NavLink to="/articles" activeClassName="active">Articoli</NavLink></li>
+                <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink></li>
+                <li><NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>Chi Siamo</NavLink></li>
+                <li><NavLink to="/articles" className={({ isActive }) => (isActive ? 'active' : '')}>Articoli</NavLink></li>
 
             </ul>
 
