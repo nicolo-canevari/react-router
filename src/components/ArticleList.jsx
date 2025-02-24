@@ -200,7 +200,7 @@ const ArticleList = () => {
             </form>
 
             {/* Lista degli articoli */}
-            <ul>
+            <ul className='articoli_list'>
 
                 {posts.map(post => (
 
