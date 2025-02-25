@@ -6,6 +6,8 @@ import Home from "../src/pages/Home";
 // pagina chi siamo
 import About from "../src/pages/About";
 import ArticleList from '../src/components/ArticleList';
+// importo ArticleDetail
+import ArticleDetail from "./pages/ArticleDetail";
 import './App.css'
 
 const App = () => {
@@ -21,6 +23,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/articles" element={<ArticleList />} />
+          <Route path="/articles/:id" element={<ArticleDetail />} />
 
         </Routes>
 
