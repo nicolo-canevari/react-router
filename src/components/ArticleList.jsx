@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // importo axios
 import axios from 'axios';
@@ -211,6 +212,9 @@ const ArticleList = () => {
                         <img src={post.image} alt={post.title} />
                         <p>{post.tags ? post.tags.join(', ') : 'Nessun tag disponibile'}</p>
                         <button onClick={() => handleDelete(post.id)}>Elimina</button>
+
+                        {/* Aggiungo il link ai dettagli del post */}
+                        <Link to={`/articles/${post.id}`}>Dettagli</Link>
 
                     </li>
 
